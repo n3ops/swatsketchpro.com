@@ -1,0 +1,120 @@
+:root {
+    --color-background-dark: #070707;
+    --color-text-light: #e7e4df;
+    --color-highlight: #38bdf6;
+    --color-button-bg: #1a1a1a;
+    --color-button-hover: #292929;
+    --font-size-sm: 0.75rem;
+    --font-size-md: 1rem;
+    --font-size-lg: 1.25rem;
+    --border-radius-md: 0.5rem;
+    --button-padding: 0.5rem 1rem;
+}
+
+body {
+    font-family: 'Exo 2', sans-serif;
+    color: var(--color-button-hover);
+}
+
+/* Anchor Styles */
+
+a {
+    color: var(--color-text-light);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--color-highlight);
+    transition: transform 0.2s ease, color 0.3s ease;
+}
+
+/* Button Styles */
+
+.btn {
+    background-color: var(--color-button-bg);
+    color: var(--color-text-light);
+    border: none;
+    padding: var(--button-padding);
+    font-size: var(--font-size-md);
+    border-radius: var(--border-radius-md);
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn:hover {
+    background-color: var(--color-button-hover);
+    transform: scale(1.05);
+    color: #fff;
+}
+
+.btn:active {
+    transform: scale(1);
+}
+
+.btn-secondary {
+    color: var(--color-highlight);
+    border: 1px solid var(--color-highlight);
+    background: none;
+}
+
+.btn-secondary:hover {
+    /*background-color: lighten(var(--color-highlight), 10%);*/
+    color: var(--color-button-hover);
+    border-color: var(--color-highlight);
+    background: none;
+}
+
+/* Icon Styles */
+
+.fa-icon {
+    color: var(--color-highlight);
+}
+
+/* Image Fit */
+
+.fit-cover {
+    object-fit: cover;
+}
+
+/* Bootstrap Icon Styles */
+
+.bs-icon {
+    --bs-icon-size: var(--font-size-sm);
+    display: flex;
+    flex-shrink: 0;
+    justify-content: center;
+    align-items: center;
+    font-size: var(--bs-icon-size);
+    width: calc(var(--bs-icon-size) * 2);
+    height: calc(var(--bs-icon-size) * 2);
+    color: var(--color-highlight);
+}
+
+.bs-icon-sm {
+    --bs-icon-size: var(--font-size-md);
+}
+
+.bs-icon.bs-icon-rounded {
+    border-radius: var(--border-radius-md);
+}
+
+.banner-p {
+    color: var(--color-highlight);
+}
+
+.bi {
+    color: var(--color-highlight);
+}
+
+.col-left {
+    background-color: rgba(0, 0, 0, 0.7);
+    color: var(--color-text-light);
+    padding: 1rem;
+    border-radius: var(--border-radius-md);
+}
+
+.dark-bg {
+    background-color: var(--color-background-dark);
+    color: var(--color-text-light);
+}
+
